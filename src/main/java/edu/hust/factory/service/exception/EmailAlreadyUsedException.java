@@ -1,4 +1,4 @@
-package edu.hust.factory.service;
+package edu.hust.factory.service.exception;
 
 public class EmailAlreadyUsedException extends RuntimeException {
 

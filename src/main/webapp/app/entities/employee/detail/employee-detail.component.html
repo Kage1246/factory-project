@@ -1,0 +1,66 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (employee) {
+      <div>
+        <h2 data-cy="employeeDetailsHeading"><span jhiTranslate="factoryApp.employee.detail.title">Employee</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ employee.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.employeeCode">Employee Code</span></dt>
+          <dd>
+            <span>{{ employee.employeeCode }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.username">Username</span></dt>
+          <dd>
+            <span>{{ employee.username }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.hashPassword">Hash Password</span></dt>
+          <dd>
+            <span>{{ employee.hashPassword }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.name">Name</span></dt>
+          <dd>
+            <span>{{ employee.name }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.phone">Phone</span></dt>
+          <dd>
+            <span>{{ employee.phone }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.email">Email</span></dt>
+          <dd>
+            <span>{{ employee.email }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.note">Note</span></dt>
+          <dd>
+            <span>{{ employee.note }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.status">Status</span></dt>
+          <dd>
+            <span>{{ employee.status }}</span>
+          </dd>
+          <dt><span jhiTranslate="factoryApp.employee.isActive">Is Active</span></dt>
+          <dd>
+            <span>{{ employee.isActive }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/employee', employee.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

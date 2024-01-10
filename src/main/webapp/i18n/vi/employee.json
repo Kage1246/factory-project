@@ -1,0 +1,32 @@
+{
+  "factoryApp": {
+    "employee": {
+      "home": {
+        "title": "Employees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Employee",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Employee",
+        "notFound": "No Employees found"
+      },
+      "created": "Một Employee mới được tạo với định danh {{ param }}",
+      "updated": "Một Employee cập nhật với định danh {{ param }}",
+      "deleted": "Một Employee đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Employee {{ id }}?"
+      },
+      "detail": {
+        "title": "Employee"
+      },
+      "id": "ID",
+      "employeeCode": "Employee Code",
+      "username": "Username",
+      "hashPassword": "Hash Password",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "note": "Note",
+      "status": "Status",
+      "isActive": "Is Active"
+    }
+  }
+}
