@@ -30,8 +30,8 @@ public class Employee implements Serializable {
     @Column(name = "username")
     private String username;
 
-    @Column(name = "hash_password")
-    private String hashPassword;
+    @Column(name = "hashed_password")
+    private String hashedPassword;
 
     @Column(name = "name")
     private String name;
@@ -92,17 +92,17 @@ public class Employee implements Serializable {
         this.username = username;
     }
 
-    public String getHashPassword() {
-        return this.hashPassword;
+    public String getHashedPassword() {
+        return this.hashedPassword;
     }
 
     public Employee hashPassword(String hashPassword) {
-        this.setHashPassword(hashPassword);
+        this.setHashedPassword(hashPassword);
         return this;
     }
 
-    public void setHashPassword(String hashPassword) {
-        this.hashPassword = hashPassword;
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
     }
 
     public String getName() {
@@ -209,7 +209,7 @@ public class Employee implements Serializable {
             "id=" + getId() +
             ", employeeCode='" + getEmployeeCode() + "'" +
             ", username='" + getUsername() + "'" +
-            ", hashPassword='" + getHashPassword() + "'" +
+            ", hashPassword='" + getHashedPassword() + "'" +
             ", name='" + getName() + "'" +
             ", phone='" + getPhone() + "'" +
             ", email='" + getEmail() + "'" +

@@ -133,7 +133,7 @@ class EmployeeResourceIT {
         Employee testEmployee = employeeList.get(employeeList.size() - 1);
         assertThat(testEmployee.getEmployeeCode()).isEqualTo(DEFAULT_EMPLOYEE_CODE);
         assertThat(testEmployee.getUsername()).isEqualTo(DEFAULT_USERNAME);
-        assertThat(testEmployee.getHashPassword()).isEqualTo(DEFAULT_HASH_PASSWORD);
+        assertThat(testEmployee.getHashedPassword()).isEqualTo(DEFAULT_HASH_PASSWORD);
         assertThat(testEmployee.getName()).isEqualTo(DEFAULT_NAME);
         assertThat(testEmployee.getPhone()).isEqualTo(DEFAULT_PHONE);
         assertThat(testEmployee.getEmail()).isEqualTo(DEFAULT_EMAIL);
@@ -250,7 +250,7 @@ class EmployeeResourceIT {
         Employee testEmployee = employeeList.get(employeeList.size() - 1);
         assertThat(testEmployee.getEmployeeCode()).isEqualTo(UPDATED_EMPLOYEE_CODE);
         assertThat(testEmployee.getUsername()).isEqualTo(UPDATED_USERNAME);
-        assertThat(testEmployee.getHashPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
+        assertThat(testEmployee.getHashedPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
         assertThat(testEmployee.getName()).isEqualTo(UPDATED_NAME);
         assertThat(testEmployee.getPhone()).isEqualTo(UPDATED_PHONE);
         assertThat(testEmployee.getEmail()).isEqualTo(UPDATED_EMAIL);
@@ -348,7 +348,7 @@ class EmployeeResourceIT {
         Employee testEmployee = employeeList.get(employeeList.size() - 1);
         assertThat(testEmployee.getEmployeeCode()).isEqualTo(UPDATED_EMPLOYEE_CODE);
         assertThat(testEmployee.getUsername()).isEqualTo(UPDATED_USERNAME);
-        assertThat(testEmployee.getHashPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
+        assertThat(testEmployee.getHashedPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
         assertThat(testEmployee.getName()).isEqualTo(DEFAULT_NAME);
         assertThat(testEmployee.getPhone()).isEqualTo(DEFAULT_PHONE);
         assertThat(testEmployee.getEmail()).isEqualTo(UPDATED_EMAIL);
@@ -394,7 +394,7 @@ class EmployeeResourceIT {
         Employee testEmployee = employeeList.get(employeeList.size() - 1);
         assertThat(testEmployee.getEmployeeCode()).isEqualTo(UPDATED_EMPLOYEE_CODE);
         assertThat(testEmployee.getUsername()).isEqualTo(UPDATED_USERNAME);
-        assertThat(testEmployee.getHashPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
+        assertThat(testEmployee.getHashedPassword()).isEqualTo(UPDATED_HASH_PASSWORD);
         assertThat(testEmployee.getName()).isEqualTo(UPDATED_NAME);
         assertThat(testEmployee.getPhone()).isEqualTo(UPDATED_PHONE);
         assertThat(testEmployee.getEmail()).isEqualTo(UPDATED_EMAIL);
